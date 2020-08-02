@@ -152,8 +152,41 @@
 					&copy; 2020 baddzse233.github.io. All rights reserved. Web TEMPLATE BY <a href="https://templated.co">Templated.co</a>
 				</div>
 			</footer>
+<!--- 记得删除 --->
+<form method="post" action="***" name="form" onsubmit="checkpost()">
 
+<label for="name">用户名：</label>
 
+<input type="text" name="name" id="name" />
+
+<br />
+
+<label for="pw">密码：</label>
+
+<input type="password" name="pw" id="pw" />
+
+<br />
+
+<input type="submit" value="提交" />
+
+</form>
+
+<script>
+
+function checkpost(){
+
+if(document.forms[5].name.value=="用户名"&&document.forms[5].pw.value==" 密码"){
+
+window.location="跳转的地bai址";
+}else{
+
+alert("用户名或密码不正确du！")
+return false;
+
+}
+}
+<!--- 记得删除 --->
+</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
